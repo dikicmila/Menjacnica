@@ -8,8 +8,8 @@ public class Glavna implements MenjacnicaInterfejs {
 
 	@Override
 	public void dodajKurs(Valuta valuta, GregorianCalendar datum, String tip, double cena) {
-		// TODO Auto-generated method stub
-
+		Kurs novi = new Kurs(tip, datum, cena);
+		valuta.kursevi.add(novi); 
 	}
 
 	@Override

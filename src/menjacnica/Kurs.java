@@ -6,6 +6,17 @@ public class Kurs {
 	private String tip;
 	private GregorianCalendar datum;
 	private double cena;
+	
+	public Kurs() {
+		
+	}
+	
+	public Kurs(String tip, GregorianCalendar datum, double cena) {
+		this.tip = tip;
+		this.datum = datum;
+		this.cena = cena;
+	}
+	
 	public String getTip() {
 		return tip;
 	}
