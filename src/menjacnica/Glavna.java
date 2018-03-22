@@ -10,6 +10,13 @@ public class Glavna implements MenjacnicaInterfejs {
 	public void dodajKurs(Valuta valuta, GregorianCalendar datum, String tip, double cena) {
 		Kurs novi = new Kurs(tip, datum, cena);
 		valuta.kursevi.add(novi); 
+		/*Kurs novi = new Kurs();
+		novi.setDatum(datum);
+		novi.setTip(tip);
+		novi.setCena(cena);
+		
+		valuta.kursevi.add(novi);*/
+
 	}
 
 	@Override
