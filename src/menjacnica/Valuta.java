@@ -1,8 +1,12 @@
 package menjacnica;
 
+import java.util.LinkedList;
+
 public class Valuta {
 	private String naziv;
 	private String skracenica;
+	public LinkedList<Kurs> kursevi = new LinkedList<Kurs>();
+	
 	public String getNaziv() {
 		return naziv;
 	}
