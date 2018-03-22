@@ -14,13 +14,17 @@ public class Glavna implements MenjacnicaInterfejs {
 
 	@Override
 	public void brisiKurs(Valuta valuta, GregorianCalendar datum) {
-		// TODO Auto-generated method stub
-
+		for (int i = 0; i < valuta.kursevi.size(); i++) {
+			if (valuta.kursevi.get(i).getDatum().equals(datum))
+				valuta.kursevi.remove(i);
+		}
 	}
 
 	@Override
 	public Kurs nadjiKurs(Valuta valuta, GregorianCalendar datum) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < valuta.kursevi.size(); i++) 
+			if (valuta.kursevi.get(i).getDatum().equals(datum))
+				return valuta.kursevi.get(i);
 		return null;
 	}
 
