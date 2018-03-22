@@ -10,18 +10,24 @@ public class Kurs {
 		return tip;
 	}
 	public void setTip(String tip) {
+		if (tip == null)
+			throw new RuntimeException();
 		this.tip = tip;
 	}
 	public GregorianCalendar getDatum() {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if (datum == null)
+			throw new RuntimeException();
 		this.datum = datum;
 	}
 	public double getCena() {
 		return cena;
 	}
 	public void setCena(double cena) {
+		if (cena < 0)
+			throw new RuntimeException();
 		this.cena = cena;
 	}
 

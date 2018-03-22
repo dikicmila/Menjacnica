@@ -7,12 +7,16 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if (naziv == null)
+			throw new RuntimeException();
 		this.naziv = naziv;
 	}
 	public String getSkracenica() {
 		return skracenica;
 	}
 	public void setSkracenica(String skracenica) {
+		if (skracenica == null)
+			throw new RuntimeException();
 		this.skracenica = skracenica;
 	}
 	@Override
